@@ -1,0 +1,104 @@
+body {
+    font-family: arial;
+}
+main {
+    font-size: 18px;
+}
+.box_header {
+    width: 100%;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 40px;
+    padding-bottom: 2px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+}
+.list_header {
+    display: inline;
+    width: 100%;
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+    margin: -4px;
+}
+.option_header {
+    text-decoration: none;
+    color: inherit;
+    padding: 10px 20px 10px 20px;
+}
+.option_header:hover {
+    width: 100%;
+    background-color: #f1a20f;
+}
+.background_list_header {
+    background-color: #ffd256;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0), 0px 10px 6px #f3af31;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown_content {
+    display: none;
+    position: absolute;
+    background-color: #ffd256;
+    width: 250px;
+    box-shadow: 0px 8px 16px 0px #f3af31;
+    z-index: 97;
+    text-align: center;
+    padding: inherit;
+    margin-top: 10px;
+}
+.dropdown_content a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    padding: inherit;
+}
+.dropdown_content a:hover {
+    background-color: #f1a20f;
+}
+.dropdown:hover .dropdown_content {
+    display: block;
+}
+#to_top {
+    position: fixed;
+    background-color: rgba(45, 45, 45, 0.1);
+    border-radius: 5px;
+    bottom: 3%;
+    left: 2%;
+    transform: scale(0.8);
+}
+#to_top:hover {
+    background-color: white;
+}
+#list_header {
+    font-size: 20px;
+    text-align: left;
+    font-weight: 600;
+    width: 100%;
+    margin: 0px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 150px;
+}
+#log_out {
+    border-color: transparent;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    width: auto;
+    background-color: blue;
+    color: white;
+    padding: 10px 23px 7px 23px;
+    text-transform: uppercase;
+    position: relative;
+    left: 90%;
+    bottom: 150px;
+    z-index: 99;
+}
+#log_out:hover {
+    background-color: rgb(81, 69, 253);
+}

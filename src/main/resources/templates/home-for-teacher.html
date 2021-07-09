@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" 
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
+<head>
+	<meta charset="UTF-8" />
+	<title>Trang chủ</title>
+	<link href="../static/css/style.css" th:href="@{/css/style.css}" rel="stylesheet" />
+	<link rel="stylesheet" href="/css/background.css" />
+    <div class="box_header" id="top_page">
+        <h1>quản lý thông tin</h1>
+        <div class="background_list_header">
+            <ul id="list_header">
+                <li class="list_header">
+                    <a class="option_header" href="/home">Trang chủ</a>
+                </li>
+                <div class="dropdown">
+                    <li class="list_header">
+                        <a class="option_header" href="/teacher/information">Thông tin</a>
+                    </li>
+                </div>
+            </ul>
+        </div>
+    </div>
+    <form action="#" th:action="@{/logout}" method="POST">
+        <button type="submit" id="log_out">Logout</button>
+    </form>
+</head>
+<main>
+</main>
+<footer>
+    <a href="#top_page">
+        <button type="submit" id="to_top">Trở về đầu trang</button>
+    </a>
+</footer>
+</html>
+

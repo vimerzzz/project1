@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
+<head>
+	<meta charset="UTF-8" />
+    <title>Chỉnh sửa thông tin</title>
+    <link href="../static/css/style.css" th:href="@{/css/style.css}" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/background.css" />
+    <link rel="stylesheet" href="/css/choose.css" />
+    <div class="box_header" id="top_page">
+        <h1>quản lý thông tin</h1>
+        <div class="background_list_header">
+            <ul id="list_header">
+                <li class="list_header">
+                    <a class="option_header" href="/home">Trang chủ</a>
+                </li>
+                <div class="dropdown">
+                    <li class="list_header">
+                        <a class="option_header" href="#">Đăng ký thông tin</a>
+                        <div class="dropdown_content">
+                            <a href="/admin/register-student">Sinh viên</a>
+                            <a href="/admin/register-teacher">Giảng viên</a>
+                        </div>
+                    </li>
+                </div>
+                <div class="dropdown">
+                    <li class="list_header">
+                        <a class="option_header" href="#">Chỉnh sửa thông tin</a>
+                        <div class="dropdown_content">
+                            <a href="/admin/choose-student">Sinh viên</a>
+                            <a href="/admin/choose-teacher">Giảng viên</a>
+                        </div>
+                    </li>
+                </div>
+            </ul>
+        </div>
+    </div>
+    <form action="#" th:action="@{/logout}" method="POST">
+        <button type="submit" id="log_out">Logout</button>
+    </form>
+</head>
+<main>
+    <form th:action="@{/admin/choose-student}" class="form" method="POST">
+        <strong class="red_color">*</strong>Chọn sinh viên cần chỉnh sửa:<br /><br /><br />
+        <input type="text" name="fullname" placeholder="Nhập mã số sinh viên" required /><br /><br /><br />
+        <div class="center_align">
+            <input id="register" type="submit" value="Tiếp" /><br /><br />
+        </div>
+    </form>
+</main>
+<footer>
+    <a href="#top_page">
+        <button type="submit" id="to_top">Trở về đầu trang</button>
+    </a>
+</footer>
+</html>

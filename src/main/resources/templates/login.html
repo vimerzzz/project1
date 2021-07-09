@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8" />
+	<title>Login Page</title>
+	<link href="../static/css/style.css" th:href="@{/css/style.css}" rel="stylesheet" />
+	<link rel="stylesheet" href="/css/login.css" />
+</head>
+<body>
+	<div class="main-content">
+		<p th:if="${param.error}" class="error">Sai tên đăng nhập hoặc mật khẩu</p>
+        <p th:if="${param.logout}" class="success">Đã đăng xuất</p>
+        <form th:action="@{/login}" method="POST">
+        	Tên đăng nhập:<br /> <br />
+        	<input type="text" name="username" placeholder="Nhập mã số sinh viên, giảng viên" /><br /><br />
+            Mật khẩu:<br /> <br />
+            <input type="password" name="password" placeholder="Nhập số chứng minh nhân dân" /><br /><br />
+            <div class="center">
+            	<button type="submit">Đăng nhập</button> <br />
+            </div>
+        </form>
+    </div>
+</body>
+</html>
